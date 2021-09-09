@@ -1,5 +1,6 @@
-import API from "../../utils/API";
+// import API from "../../utils/API";
 import React from 'react'
+import CharItem from '../CharItem'
 
 const CharacterGrid = ({ items, isLoading }) => {
     return isLoading ? (
@@ -7,7 +8,7 @@ const CharacterGrid = ({ items, isLoading }) => {
     ) : (
         <section className='cards'>
             {items.map((item) => (
-                <h1 key={item.char_id}>{item.name}</h1>
+                <CharItem key={item.char_id} item={item}></CharItem>
             ))}
         </section>
     )

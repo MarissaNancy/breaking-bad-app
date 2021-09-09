@@ -89,12 +89,12 @@ header img {
   transform: rotateY(180deg);
 }
 
-/* .card-front, .card-back {
+.card-front, .card-back {
   position: absolute;
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
-} */
+}
 
 .card-back {
   background-color: #333;
