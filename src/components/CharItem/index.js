@@ -4,7 +4,7 @@ const CharItem = ({ item }) => {
     return (
         <div className="card">
             <div className="card-inner">
-                <div className="card-font">
+                <div className="card-front">
                     <img src={item.img} alt="" />
                 </div>
                 <div className="card-back">
@@ -17,7 +17,7 @@ const CharItem = ({ item }) => {
                             <strong>Nickname: </strong> {item.nickname}
                         </li>
                         <li>
-                            <strong>Birthday:</strong>
+                            <strong>Birthday:</strong>{item.birthday}
                         </li>
                         <li>
                             <strong>Status:</strong> {item.status}
